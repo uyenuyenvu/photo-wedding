@@ -1,0 +1,87 @@
+.company-profile{
+    font-weight: bold;
+    .message {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .content {
+        text-align: justify;
+    }
+    .auther {
+        text-align: end;
+        margin-top: 1rem;
+    }
+    .title {
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__content-title {
+        text-align: start;
+    }
+    &__news {
+        background: rgb(230, 230, 230);
+        border-top: 6px solid violet;
+        h2{
+            padding: 1rem 0;
+        }
+    }
+    &__input {
+        width: 95%;  
+        height: 120px;  
+        padding: 12px 20px;  
+        box-sizing: border-box;  
+        border: 4px solid #ccc;  
+        border-radius: 12px;  
+        resize: none;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+}
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.list-content {
+    list-style-type: none;
+    padding: 0;
+    text-align: start;
+}
+.bot-chat {
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+    width: 5rem;
+}
+.pd-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+@media only screen and (max-width: 600px) {
+.company-profile {
+    .message {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .company-profile__input {
+        height: 4.5rem; 
+    }
+}
+.pd-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.flex-col {
+    flex-direction: column;
+    width: 50%;
+}
+.bot-chat {
+    bottom: 100px;
+    width: 6rem;
+}
+}

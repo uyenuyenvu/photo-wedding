@@ -1,0 +1,38 @@
+.cardWrap{
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  .thumbnail{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    .imgThumbnail{
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .contentCard{
+    border: 0.1px solid #a9a9a93d;
+    padding: 40px 10px;
+    .titleCard{
+      margin-bottom: 30px;
+      font-size: 21px;
+    }
+    .descriptionCard{
+      font-size: 21px;
+      height: 100px;
+      .itemDes{
+        margin: 0;
+      }
+    }
+    .buttonCard{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

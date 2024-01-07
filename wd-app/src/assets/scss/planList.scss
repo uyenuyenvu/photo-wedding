@@ -1,0 +1,138 @@
+.plan-list {
+    font-weight: bold;
+    font-size: 1.5rem;
+    .title {
+        font-size: 2.5rem;
+        margin: 60px auto;
+    }
+    .content {
+        margin: 0 150px 0 50px;
+        .item-content {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            .img-content {
+                width: 48%;
+                .imageBg {
+                    width: 100%;
+                    height: 370px;
+                    object-fit: cover;
+                }
+            }
+            .text-content {
+                width: 48%;
+                text-align: start;
+                font-size: 1.5rem;
+                .title-text {
+                    font-size: 2.5rem;
+                    height: 126px;
+                }
+            }
+        }
+        
+    }
+    .border {
+        height: 6px;
+        width: 40%;
+        background: #000;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    .instruct {
+        margin-bottom: 95px;
+        .instruct-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        .instruct-content {
+            margin: 0 190px;
+            .instruct-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 95px;
+                .chart {
+                    padding: 10px 20px;
+                    color: white;
+                    background-color: rgb(196, 105, 189);
+                    border-radius: 20px;
+                    cursor: pointer;
+                    height: 130px;
+                    width: 230px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    .arrow {
+                        position: absolute;
+                        height: 120px;
+                        bottom: -107px;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+                .note {
+                    width: 50%;
+                    text-align: start;
+                    margin: auto 0;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .plan-list {
+        font-weight: bold;
+        font-size: 1rem;
+        .title {
+            font-size: 1.5rem;
+        }
+        .content {
+            margin: 0 35px 0 9px;
+            .item-content {
+                padding-bottom: 30px;
+            }
+            .item-content .text-content {
+                font-size: 1rem;
+            }
+            .item-content .img-content .imageBg {
+                height: 240px;
+            }
+        }
+        .border {
+            margin-bottom: 1.5rem;
+        }
+        .instruct .instruct-content {
+            margin: 0px 36px;
+            .instruct-item {
+                margin-bottom: 60px;
+                .chart {
+                    height: 100px;
+                    width: 180px;
+                    .arrow {
+                        height: 78px;
+                        bottom: -69px;
+                    }
+                }
+            }
+            
+        }
+        .instruct {
+            margin-bottom: 60px;
+        }
+    }
+    .plan-list .content .item-content .text-content .title-text {
+        font-size: 1.5rem;
+        height: 65px;
+    }
+    .plan-list .instruct .instruct-title {
+        font-size: 1.5rem;
+        margin-bottom: 46px;
+    }
+    .plan-list .instruct .instruct-content .instruct-item .note p {
+        font-size: 0.75rem;
+    }
+}

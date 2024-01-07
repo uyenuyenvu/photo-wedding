@@ -1,0 +1,22 @@
+.requiry {
+    .bg-img {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+        }
+        .content-btn {
+            position: absolute;
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            z-index: 1;
+            top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}

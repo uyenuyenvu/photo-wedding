@@ -1,0 +1,45 @@
+.footerWrap{
+  width: 100%;
+  padding: 15px 30px;
+  background-color: black;
+  position: relative;
+  .listButton{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    .itemButton{
+      margin-right: 30px;
+    }
+  }
+  .textCopyRight{
+    position: absolute;
+    right: 30px;
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footerWrap {
+    padding: 10px;
+    .listButton{
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .itemButton{
+        margin-right: 10px;
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
+    .textCopyRight{
+      position: relative;
+      right: 0;
+      top: 0;
+      transform: none;
+      font-size: 12px;
+    }
+  }
+}
