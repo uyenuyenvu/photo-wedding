@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="78" viewBox="0 0 78 78">
+    <defs>
+        <filter id="Ellipse_12" x="0" y="0" width="78" height="78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity="0.161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_68" data-name="Rectangle 68" width="24.527" height="21" fill="#fff"/>
+        </clipPath>
+    </defs>
+    <g id="Component_68_76" data-name="Component 68 – 76" transform="translate(9 6)" style="isolation: isolate">
+        <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_12)">
+            <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="30" cy="30" r="30" transform="translate(9 6)" fill="#635905"/>
+        </g>
+        <g id="Group_62" data-name="Group 62" transform="translate(17.251 10)">
+            <g id="Group_27" data-name="Group 27" clip-path="url(#clip-path)">
+                <path id="Path_17" data-name="Path 17" d="M47.213,17.5a.5.5,0,0,1-.317-.114l-3.65-3.021a12.842,12.842,0,0,1-3.3.425c-5.437,0-9.86-3.318-9.86-7.4S34.507,0,39.944,0,49.8,3.318,49.8,7.4a6.539,6.539,0,0,1-2.862,5.215l.76,4.308a.5.5,0,0,1-.49.584m-3.85-4.182a.5.5,0,0,1,.317.114l2.807,2.324-.579-3.281a.5.5,0,0,1,.2-.494,5.672,5.672,0,0,0,2.7-4.588c0-3.53-3.977-6.4-8.865-6.4s-8.865,2.872-8.865,6.4,3.977,6.4,8.865,6.4a11.8,11.8,0,0,0,3.28-.457.5.5,0,0,1,.138-.019" transform="translate(-25.278)" fill="#fff"/>
+                <path id="Path_18" data-name="Path 18" d="M17.284,48.222c-5.171,0-9.362-3.089-9.362-6.9a5.159,5.159,0,0,1,.09-.945,8.858,8.858,0,0,0-1.124.441,6.008,6.008,0,0,0-3.772,5.24c0,2.51,1.932,4.667,4.7,5.615l.373,2.755,1.655-2.3a10.072,10.072,0,0,0,1.118.063c3.378,0,6.257-1.669,7.361-4.01-.34.028-.684.044-1.034.044" transform="translate(-2.617 -33.927)" fill="#fff"/>
+                <path id="Path_19" data-name="Path 19" d="M5.568,52.309a.5.5,0,0,1-.493-.431l-.333-2.456C1.851,48.326,0,46.006,0,43.442a6.448,6.448,0,0,1,4.056-5.689,9.394,9.394,0,0,1,1.187-.466.5.5,0,0,1,.64.565,4.691,4.691,0,0,0-.081.854c0,3.529,3.977,6.4,8.865,6.4.323,0,.648-.014.993-.042a.5.5,0,0,1,.491.708c-1.211,2.569-4.35,4.3-7.811,4.3-.29,0-.585-.013-.881-.038L5.972,52.1a.5.5,0,0,1-.4.207M4.81,38.5q-.167.07-.327.146A5.483,5.483,0,0,0,1,43.442c0,2.217,1.712,4.236,4.361,5.144a.5.5,0,0,1,.332.4l.205,1.516.925-1.288a.5.5,0,0,1,.459-.2A8.163,8.163,0,0,0,14.812,46.1h-.145c-5.437,0-9.86-3.318-9.86-7.4,0-.067,0-.134,0-.2" transform="translate(0 -31.309)" fill="#fff"/>
+            </g>
+        </g>
+        <text id="サポート" transform="translate(35 35)" fill="#fff" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-14.958" y="11">サポート</tspan></text>
+    </g>
+</svg>

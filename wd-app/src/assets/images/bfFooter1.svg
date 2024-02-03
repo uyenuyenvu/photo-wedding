@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="124" viewBox="0 0 332 124">
+    <defs>
+        <filter id="Rectangle_292" x="0" y="0" width="332" height="124" filterUnits="userSpaceOnUse">
+            <feOffset dy="4" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feFlood flood-color="#e7e1d7"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_301" data-name="Rectangle 301" width="60" height="47.381" fill="none" stroke="#9a845b" stroke-width="2.5"/>
+        </clipPath>
+    </defs>
+    <g id="Component_57_1" data-name="Component 57 – 1" transform="translate(12 8)">
+        <g transform="matrix(1, 0, 0, 1, -12, -8)" filter="url(#Rectangle_292)">
+            <rect id="Rectangle_292-2" data-name="Rectangle 292" width="308" height="100" rx="50" transform="translate(12 8)" fill="#fff"/>
+        </g>
+        <g id="Group_144" data-name="Group 144" transform="translate(-323.324 -5650)">
+            <text id="お客様レポート" transform="translate(447.324 5669)" fill="#d73567" font-size="16" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="17">お客様レポート</tspan></text>
+            <text id="喜びの声_続々_お客様の声はこちら" data-name="喜びの声、続々！
+お客様の声はこちら" transform="translate(446.324 5696)" fill="#9a845b" font-size="12" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="13">喜びの声、続々！</tspan><tspan y="13" font-family="SegoeUI, Segoe UI"></tspan><tspan x="0" y="31">お客様の声はこちら</tspan></text>
+        </g>
+        <g id="Group_154" data-name="Group 154" transform="translate(43 26)">
+            <g id="Group_155" data-name="Group 155" transform="translate(0 0)" clip-path="url(#clip-path)">
+                <line id="Line_7" data-name="Line 7" x2="15.612" y2="11.678" transform="translate(42.692 33.361)" fill="none" stroke="#9a845b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+                <line id="Line_8" data-name="Line 8" y1="11.678" x2="15.612" transform="translate(42.692 2.341)" fill="none" stroke="#9a845b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+                <path id="Path_74" data-name="Path 74" d="M1.68,13.646V33.233l7.435-5.313L35.889,45.259V1.68L9.263,19.034Z" transform="translate(0.221 0.221)" fill="none" stroke="#9a845b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+            </g>
+        </g>
+    </g>
+</svg>

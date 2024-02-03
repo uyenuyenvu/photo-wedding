@@ -1,13 +1,30 @@
 .buttonWrap{
-  padding: 10px 20px;
+  font-size: 16px;
+  width: 247px;
   color: white;
-  background-color: #B124A0;
-  border-radius: 5px;
+  border-radius: 10px;
+  background: #ba333e;
   cursor: pointer;
-  height: 45px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 1px;
+  &:hover{
+    color: #ba333e;
+    background: white;
+    border: 1px solid #ba333e;
+  }
+  &.type1{
+    background: #e7e1d7;
+    color: #635905;
+    cursor: not-allowed;
+    &:hover{
+      background: #e7e1d7;
+      color: #635905;
+      border: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

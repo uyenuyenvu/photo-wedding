@@ -1,0 +1,130 @@
+.produce-crew {
+  color: #635905;
+  font-size: 14px;
+  #color-bg {
+    background-color: #f5f1eb;
+  }
+  .title-page {
+    position: relative;
+    width: 628px;
+    height: 108.85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    .title {
+      font-size: 28px;
+      color: #ba333e;
+      font-weight: 700;
+    }
+    .sub-title {
+      margin-top: 5px;
+      color: #000000;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .text-page {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .content {
+    padding: 60px 0;
+    .title {
+      width: 1088px;
+      margin: 0 auto;
+      .text {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: start;
+      }
+      .sub-title {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .list-img {
+      width: 1088px;
+      margin: 0 auto;
+      margin-top: 40px;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      .item {
+        width: 239px;
+        img {
+          width: 100%;
+        }
+        .title-img {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+.py-5 {
+  padding: 20px 0;
+}
+.flex {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .produce-crew {
+    .title-page {
+      width: 372px;
+      height: 80.02px;
+      display: flex;
+      margin: 20px auto;
+      .title {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      .sub-title {
+        margin-top: 2px;
+        font-size: 12px;
+      }
+      img {
+        width: 372px;
+        height: 80.02px;
+      }
+    }
+    .content {
+      padding: 60px 0;
+      .title {
+        width: 332px;
+        .text {
+          font-size: 18px;
+        }
+        .sub-title {
+          font-size: 12px;
+          display: flex;
+          flex-direction: column;
+          .text-start {
+            margin-bottom: 40px;
+            text-align: start;
+          }
+        }
+      }
+      .list-img {
+        width: 290px;
+        margin-top: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        .item {
+          width: 140px;
+          img {
+            width: 100%;
+          }
+          .title-img {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

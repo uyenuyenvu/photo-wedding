@@ -1,0 +1,46 @@
+.privacy-policy {
+    color: #9A845B;
+    max-width: 904px;
+    margin: 0 auto;
+    .title {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+    .sub-title {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .line {
+        margin-top: 60px;
+        width: 100%;
+        height: 1px;
+        background: #F5F1EB;
+        margin-bottom: 20px;
+    }
+    .content {
+        font-size: 12px;
+        text-align: start;
+        span {
+            font-weight: 600;
+        }
+    }
+    .sign {
+        text-align: end;
+        margin-top: 50px;
+    }
+    .title-two {
+        font-size: 32px;
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .privacy-policy {
+        max-width: 372px;
+        .title {
+            font-size: 20px;
+        }
+        .sub-title {
+            font-size: 16px;
+        }
+    }
+}

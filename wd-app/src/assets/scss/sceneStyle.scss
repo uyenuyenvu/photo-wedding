@@ -1,0 +1,151 @@
+.scene {
+  color: #635905;
+  font-size: 14px;
+  .title-page {
+    position: relative;
+    width: 628px;
+    height: 108.85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 20px;
+    .title {
+      font-size: 28px;
+      color: #ba333e;
+      font-weight: 700;
+    }
+    .sub-title {
+      margin-top: 5px;
+      color: #000000;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .text-page {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .notion {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto 40px;
+    justify-content: center;
+    .item {
+      position: relative;
+      width: 332px;
+      padding: 10px 0;
+      border-bottom: 1px solid #9a845b;
+      color: #9a845b;
+      img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+    }
+  }
+  .content {
+    .title-content {
+      font-size: 32px;
+      font-weight: bold;
+      padding-top: 60px;
+    }
+    .sub-title {
+      font-size: 12px;
+    }
+    .list-content {
+      max-width: 1088px;
+      margin: 20px auto;
+      display: flex;
+      padding: 50px 0;
+      gap: 16px;
+      flex-wrap: wrap;
+      .item {
+        width: 352px;
+        .index {
+          width: 200px;
+          height: 30px;
+          border: 1px solid #9a845b;
+          border-radius: 20px;
+          margin: 0 auto;
+          justify-content: center;
+        }
+        .title-item {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          margin-top: 30px;
+        }
+        img {
+          margin-top: 25px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#color-bg {
+  background-color: #f5f1eb;
+}
+@media only screen and (max-width: 600px) {
+  .scene {
+    .title-page {
+      width: 372px;
+      height: 80.02px;
+      display: flex;
+      margin: 20px auto;
+      .title {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      .sub-title {
+        margin-top: 2px;
+        font-size: 12px;
+      }
+      img {
+        width: 372px;
+        height: 80.02px;
+      }
+    }
+    .text-page {
+      font-size: 14px;
+      width: 308px;
+      margin: 0 auto;
+    }
+    .notion {
+      padding-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      .item {
+        width: 332px;
+      }
+    }
+    .content {
+      .title-content {
+        font-size: 18px;
+      }
+      .list-content {
+        gap: 12px;
+        flex-wrap: wrap;
+        width: 332px;
+        .item {
+          width: 160px;
+          .index {
+            width: 100%;
+            height: 25px;
+          }
+          .title-item {
+            font-size: 16px;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}

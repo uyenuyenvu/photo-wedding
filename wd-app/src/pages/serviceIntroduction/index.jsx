@@ -5,6 +5,7 @@ import Button from "../../components/common/Button.jsx";
 import * as React from 'react';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
+import BeforeFooter from "../../components/common/BeforeFooter";
 export default function ServiceIntroduction() {
   const settingsCarousel =  {
     arrows: false,
@@ -29,9 +30,10 @@ const itemData = [
     img: imgDefault,
     title: 'Coffee',
   },
-  
+
 ];
   return (
+    <>
     <div className={'service-introduction'}>
       <div className="main-content">
         <div className='img-content'>
@@ -63,7 +65,7 @@ const itemData = [
                             <div>hogehoge</div>
                             <div>hogehoge</div>
                         </div>
-                        
+
                     </div>
                 ))}
             </Slider>
@@ -90,7 +92,7 @@ const itemData = [
                             <div>hogehoge</div>
                             <div>hogehoge</div>
                         </div>
-                        
+
                     </div>
                 ))}
             </Slider>
@@ -117,7 +119,7 @@ const itemData = [
                             <div>hogehoge</div>
                             <div>hogehoge</div>
                         </div>
-                        
+
                     </div>
                 ))}
             </Slider>
@@ -157,7 +159,7 @@ const itemData = [
                             <div>hogehoge</div>
                             <div>hogehoge</div>
                         </div>
-                        
+
                     </div>
                 ))}
             </Slider>
@@ -176,6 +178,8 @@ const itemData = [
       <div className="border">
       </div>
     </div>
+      <BeforeFooter />
+    </>
   );
 }
 

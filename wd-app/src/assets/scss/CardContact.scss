@@ -1,0 +1,93 @@
+.cardWrapContact{
+  display: flex;
+  flex-direction: row;
+  width: 414px;
+  &.horizone{
+    width: 212px;
+    flex-direction: column;
+    .thumbnail{
+      padding: 0 32px;
+      margin-bottom: 10px;
+      .imgThumbnail{
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .thumbnail{
+    padding: 0 32px;
+    margin-bottom: 10px;
+    .imgThumbnail{
+      border-radius: 50%;
+    }
+  }
+  .button1{
+    cursor: pointer;
+    width: 212px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #9A845B;
+    background-image: url("src/assets/images/top/cardContainerButton.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contentCard{
+    .descriptionCard{
+      font-size: 14px;
+      color: #9A845B;
+      text-align: left;
+      line-height: 20px;
+      margin: 10px;
+    }
+  }
+  .buttonCard{
+    width: 100%;
+    border-radius: 20px;
+    font-size: 12px;
+    height: 33px;
+    color: white;
+    background: #9A845B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      color: #9A845B;
+      background: white;
+      border: 1px solid #9A845B;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+.cardWrapContact{
+  width: 100%;
+  flex-direction: row!important;
+  justify-content: space-between;
+  align-items: center;
+  &.horizone{
+    width: 100%;
+    .thumbnail{
+      padding: 0;
+    }
+  }
+  .thumbnail{
+    width: 36%;
+    padding: 0;
+  }
+  .content{
+    width: 53%;
+  }
+  .button1{
+    width: 100%;
+  }
+  .contentCard{
+    .descriptionCard{
+      font-size: 12px;
+    }
+  }
+}
+}

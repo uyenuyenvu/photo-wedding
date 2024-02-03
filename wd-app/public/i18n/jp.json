@@ -1,0 +1,128 @@
+{
+  "title": "Applicazione multilingue",
+  "label": "Selezionare un'altra lingua ",
+  "about": "Su di me",
+  "home_": "Casa",
+  "faq": {
+  "qa": "-よくあるご質問-",
+  "aboutShooting": "撮影について",
+  "aboutLocation": "ロケーション撮影について",
+  "aboutBeauty": "美容・ヘアメイクについて",
+  "aboutPhotos": "写真・アルバムについて",
+  "aboutAccess": "アクセスについて",
+  "aboutPayment": "お支払いについて",
+  "aboutReservations": "予約について",
+  "text1": "撮影や見学に親も一緒についていくことは可能ですか？",
+  "text2": "はい、可能です。ご予約・ご相談の際にお申し付けください。",
+  "text3": "突然行ってその日に撮影できますか？",
+  "text4":
+  "ご予約状況によります。ご来店される前にお電話にてご相談くださいませ。",
+  "text5": "来店から撮影終了までの所要時間はどれくらいですか？",
+  "text6":
+  "プランによって異なりますが、スタンダードプランの場合でも、ヘアメイクなどの支度も含めて3～4時間以上はかかります。詳しくはお問合せ下さい。",
+  "text7": "自分のスマートフォンでの自撮りや撮影は可能ですか？",
+  "text8":
+  "申し訳ございませんが、ご自身のカメラやスマホでの撮影はご遠慮いただいております。",
+  "text9": "何日前に撮影の予約をしたらいいですか？",
+  "text10":
+  "スタジオや撮影ロケ地に空きがあれば直前でのご案内も可能です。桜・新緑や秋のシーズンの予約は混み合うため、２〜３ヶ月前までのご予約をお勧めしております。予約可能日のご確認はこちらのページをご確認ください。",
+  "text11": "撮影予約は来店後にしかできませんか？",
+  "text12": "電話またはメールのみでのご予約も可能です。",
+  "text13": "打ち合わせの予約は必要ですか？",
+  "text14":
+  "当日でも空いていれば予約可能です。ご来店前に一度お電話でご確認ください。",
+  "text15": "遠方で来店できない場合はどうしたらいいですか？",
+  "text16":
+  "オンラインや電話での撮影予約・打合せも可能です。その旨をお知らせください。",
+  "returnTop": "ページ上部へ戻る"
+  },
+  "home": {
+  "onDetails": "コンセプト詳細はこちら",
+  "title": "SPECIAL CAMPAIGN",
+  "subTitle": "-スペシャルキャンペーン-",
+  "onCampaignList": "キャンペーン一覧はこちら",
+  "planeWrapTitle": "PHOTO PLAN",
+  "planeWrapSubTitle": "-撮影プラン-",
+  "titleCard1": "ロケーション撮影",
+  "descriptionCard1": "お二人のお気に入りの場所で撮影",
+  "textbtn1": "プラン詳細を見る",
+  "titleCard2": "スタジオ撮影",
+  "descriptionCard21": "日本最大級3０シーンのフォトウェディング専",
+  "descriptionCard22": "用スタジオでの撮影",
+  "textbtn2": "プラン詳細を見る",
+  "titleCard3": "コンセプト撮影",
+  "descriptionCard3": "日本アニメの聖地で撮影",
+  "textbtn3": "プラン詳細を見る",
+  "about": "ABOUT",
+  "subAbout": "-おすすめのコンテンツ-",
+  "txtButtonCardContact1": "プロデュースクルー",
+  "descriptionCardContact1":
+  "ウェディングフォト専門のフォトグラファー、ヘアメイク、演出プロデューサーが多数在籍！",
+  "txtButtonCardContact2": "衣装",
+  "descriptionCardContact2":
+  "流行に敏感な花嫁の憧れの世界観を叶えるため、こだわりの衣装を豊富に取り揃えております。",
+  "txtButtonCardContact3": "レタッチ＆アルバム",
+  "descriptionCardContact3":
+  "流行に敏感な花嫁の憧れの世界観を叶えるため、こだわりの衣装を豊富に取り揃えております。",
+  "txtButtonCardContact": "詳しくはこちら",
+  "blanzWrapTitle": "BLANZ",
+  "blanzWrapSubTitle": "-フォトギャラリー-",
+  "titleConcept": "CONCEPT MOVIE",
+  "subTitleConcept": "-コンセプトムービー-",
+  "subTitleConcept2": "特別な節目に最高の撮影体験を",
+  "buttonAfterCarousel": "コンセプト詳細はこちら",
+  "review": "REVIEW",
+  "subReview": "-お客様の声-",
+  "subReview2": "BLANZで撮影されたお客様の撮影写真とご感想を紹介します",
+  "textReview1": "オープニングキャンペーン　特賞のお客様",
+  "textReview2": "ディズニー好きなおふたりが選ぶ素敵シーン",
+  "textReview3": "ご好評いただいているシーン♪",
+  "btnReview": "お客様レポートはこちら",
+  "access": "ACCESS",
+  "subAccess": "-アクセス-",
+  "subAccess2": "〒550-0015 大阪市西区南堀江1-9-1現代オレンジビル3F",
+  "textAccess":
+  "Osaka Metro 四ツ橋駅から徒歩約5分・心斎橋駅から徒歩約8分・なんば駅から徒歩約10分"
+  },
+  "footer": {
+  "title1": "フォームからご予約",
+  "title2": "サービスに関するご質問",
+  "textbtn1": "フォームはこちら",
+  "textbtn2": "質問はこちら"
+  },
+  "planList": {
+  "title": "SPECIAL CAMPAIGN",
+  "subtitle": "-お客様レポート-"
+  },
+  "studio": {
+  "title": "SHOOTING PLAN",
+  "subtitle": "-スタジオ撮影-",
+  "text1": "BLANZのスタジオ撮影は_こだわりの作り込まれた撮影セットで撮る",
+  "text2": "_ここにしかない特別なウェディングフォト",
+  "text3": "日本ならではの和装撮影をしたい",
+  "text4": "和装1着_ロケ1ヶ所",
+  "included": "税込",
+  "button1": "撮影1時間",
+  "textButton1": "3シーン/約100カット",
+  "button2": "和装レンタル",
+  "textButton2": "ドレス1着_タキシード1着",
+  "button3": "小物レンタル",
+  "button4": "新婦ヘアメイク着付け",
+  "button5": "全データ",
+  "textButton5": "100カット",
+  "text5": "※土日祝日料金は＋22,000円申し受けます。",
+  "text6": "※ロケーション撮影地によって料金が異なります。",
+  "text7": "想在喜欢的日本名胜地拍下西装与和服的美丽照片！",
+  "text8": "西装一套+和服一套・外景拍摄地点一个",
+  "text9": "※土日祝日料金は＋22,000円申し受けます。",
+  "text10": "※ロケーション撮影地によって料金が異なります。"
+  },
+  "scene": {
+  "title": "SCENE",
+  "subTitle": "-シーン-",
+  "text1": "BLANZのこだわり30シーンを紹介",
+  "text2": "画像タップで詳細を確認できます",
+  "studio": "STUDIO",
+  "location": "LOCATION"
+  }
+}

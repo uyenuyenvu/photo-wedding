@@ -1,73 +1,354 @@
+
 .headerWrap{
   width: 100%;
-  padding: 15px 30px;
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  .companyLogo{
-    background-color: gray;
-    color: white;
-    width: 40%;
-    min-height: 30px;
+  .headerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 70px;
+    padding: 0 30px;
+
+    img{
+      cursor: pointer;
+    }
+  }
+  .headerBot{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    font-weight: bold;
-  }
-  .headerRight{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    .listMenu{
-      display: flex;
-      width: max-content;
-      align-items: center;
-      height: 100%;
-
-    }
-    .not_active{
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: 100vw;
-      transition: all .5s ease-out;
-    }
-    .active{
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      right: 0;
-      transition: all .5s ease-out;
-    }
+    height: 44px;
+    background: #F5F1EB;
     .itemMenu{
-      font-weight: bold;
-      margin-left: 20px;
+      color: #635905;
+      font-size: 14px;
+      margin: 0 30px;
       a{
-        color: white;
+        color: #635905;
         text-decoration: none;
-        :hover{
-          text-decoration: underline;
+      }
+    }
+  }
+  .menuDetailWrap{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    display: none;
+
+    &.active{
+      display: block;
+      animation-duration: 1s;
+      animation-name: openDetailWrap;
+      background: #555555;
+    }
+    &.hide{
+      animation-duration: 1s;
+      animation-name: closeDetailWrap;
+      background: transparent;
+    }
+  }
+  .menuDetail{
+    width: 414px;
+    height: 100vh;
+    background-image: linear-gradient(white, white, white, #F5F1EB, #F5F1EB, #F5F1EB);
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.active{
+      transform: translateX(0);
+    }
+    .menuDetailTop{
+      .closeImage{
+        padding: 0 20px 0 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        a{
+          img{
+            height: 50px;
+          }
+        }
+      }
+      .tableMenu{
+        table{
+          width: 100%;
+          tr{
+            td{
+              width: 50%;
+              border: 0.5px solid white;
+
+              .content{
+                width: 100%;
+                height: 52px;
+                background: #9A845B;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                  color: white;
+                  font-size: 14px;
+                }
+              }
+
+            }
+          }
+        }
+      }
+      .listLanguage{
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: #635905;
+        .itemLange{
+          cursor: pointer;
+          &.active{
+            cursor: unset;
+          }
+        }
+        .active{
+          color: #ba333e;
+        }
+        .sep{
+          margin: 0 10px;
         }
       }
     }
-    img{
-      max-height: 35px;
-      object-fit: cover;
-      margin: 0 5px;
-      cursor: pointer;
-      &:last-of-type{
-        filter: invert(100%) sepia(0%) saturate(1414%) hue-rotate(345deg) brightness(108%) contrast(101%);
-        margin: 0 0 0 15px;
+    .menuDetailMid{
+      padding-top: 20px;
+      background: #f5f1eb;
+      border-top: 3px solid #9a845b;
+      .titleWrap{
+        .title{
+          font-size: 16px;
+          color: #ba333e;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .sub{
+          font-size: 14px;
+          color: #9a845b;
+        }
+      }
+      .itemContact{
+        margin: 20px 10px;
+        .nameContact{
+          font-size: 16px;
+          color: #635905;
+        }
+        .imageContact{
+          margin: 10px 0;
+          img{
+            margin: 0 10px;
+            border-radius: 50%;
+          }
+          .imgMain{
+            max-width: 89px;
+          }
+        }
+        .buttonContact{
+          margin-bottom: 20px;
+          .btnContact{
+            background: #FFFFFF;
+            margin: 0 auto;
+            color: #635905;
+            border: 1px solid #635905;
+            height: 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            width: 150px;
+            cursor: pointer;
+            &:hover{
+              background: #635905;
+              color: white;
+            }
+          }
+        }
+        .desContact{
+          .title{
+            font-size: 16px;
+            color: #635905;
+            margin-bottom: 10px;
+          }
+          .sub{
+            font-size: 10px;
+            color: #9a845b;
+          }
+        }
+        &.borderTop{
+          border-top: 1px solid #9a845b2b;
+        }
+      }
+    }
+    .menuDetailBot{
+      font-size: 10px;
+      color: white;
+      text-align: center;
+      padding: 10px 30px;
+      background: #9a845b;
+      .flex{
+        justify-content: center;
+        .item{
+          color: white;
+
+          margin: 0 10px 10px 10px;
+        }
+      }
+    }
+    .headerChat{
+      background-color: #9A845B;
+      height: 65px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: white;
+      img{
+        margin: 0 30px;
+      }
+    }
+    .contentChat{
+      padding: 30px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow-anchor: auto !important;
+      max-height: calc(100vh - 50px);
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #c8b695;
+        border-radius: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #9A845B;
+      }
+      .itemChat{
+        width: 100%;
+        position: relative;
+        padding: 13px 20px;
+        text-align: left;
+        border-radius: 13px;
+        &.isAdmin{
+          background-color: #9A845B;
+          color: white;
+          margin: 20px 0;
+          .arrLeft{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateX(-100%) translateY(-50%);
+          }
+        }
+        &.isUser{
+          background-color: #E7E1D7;
+          color: red;
+          border-radius: 15px;
+          padding: 20px;
+          margin: 20px 0;
+          .arrRight{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%) translateX(100%);
+          }
+        }
+        &.optionChat{
+          background-color: #E7E1D7;
+          color: black;
+          cursor: pointer;
+          margin-bottom: 10px;
+          img{
+            margin-right: 15px;
+          }
+        }
       }
     }
   }
+  .iconChat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
+    cursor: pointer;
+  }
+}
+@keyframes closeDetailWrap {
+  0% {
+    background: #555555;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+   display: none;
+  }
+}
+@keyframes openDetailWrap {
+  0% {
+    background:transparent;
+  }
+  100% {
+    background:  #555555;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .pc{
+    display: none!important;
+  }
   .headerWrap{
     padding: 10px;
+    .headerTop{
+      flex-direction: row-reverse;
+      padding: 0;
+      .buttonWrap{
+        display: none;
+      }
+    }
+    .headerBot{
+      display: none;
+    }
+    .menuDetail{
+      width: 100vw;
+      .menuDetailTop{
+        .closeImage{
+          padding: 10px;
+        }
+        .listLanguage{
+          margin: 15px 0;
+
+        }
+      }
+      .menuDetailMid{
+        .itemContact{
+          margin: 10px 20px;
+        }
+      }
+    }
     .companyLogo{
       font-size: 12px;
       max-height: 25px;

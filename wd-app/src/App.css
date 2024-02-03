@@ -1,10 +1,12 @@
 #root {
-  max-width: 1500px;
+  /*max-width: 1500px;*/
   width: 100vw;
   margin: 0 auto;
   text-align: center;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

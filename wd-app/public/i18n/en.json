@@ -1,0 +1,34 @@
+{
+  "title": "Multi-language app",
+  "label": "Select another language!",
+  "about": "About",
+  "home_": "Home",
+  "faq": {
+    "qa": {
+      "aboutShooting": "About Shooting",
+      "aboutLocation": "About Location Shooting",
+      "aboutBeauty": "About Beauty, Hair & Makeup",
+      "aboutPhotos": "About Photos and Albums",
+      "aboutAccess": "About Access",
+      "aboutPayment": "About Payment",
+      "aboutReservations": "About Reservations",
+      "text1": "Is it possible for parents to accompany their children on photo shoots and tours?",
+      "text2": "Yes, it is possible.Please let us know at the time of reservation or consultation.",
+      "text3": "Can I go suddenly and shoot that day?",
+      "text4": "Depends on availability.Please call us before coming to the store.",
+      "text5": "How long does it take from the time I arrive to the end of the photo shoot?",
+      "text6": "It depends on the plan, but even with the standard plan, it will take at least 3-4 hours including hair and makeup preparation. Please inquire for details.",
+      "text7": "Can I take selfies or photos with my own smartphone?",
+      "text8": "We are sorry, but please refrain from taking pictures with your own camera or smartphone.",
+      "text9": "How many days in advance should I book my photo shoot?",
+      "text10": "Last-minute reservations are possible if there is availability in the studio or shooting location.Due to the high demand for reservations during the cherry blossom, fresh greenery, and fall seasons, we recommend making reservations at least 2 to 3 months in advance.Please check this page for available reservation dates.",
+      "text11": "Can I make a reservation for a photo shoot only after I come to the store?",
+      "text12": "Reservations can be made by phone or email only.",
+      "text13": "Do I need to make an appointment for a meeting?",
+      "text14": "Reservations can be made on the same day if available. Please call us to confirm before coming.",
+      "text15": "What if I am too far away to come to your store?",
+      "text16": "You can also book and meet with us online or by phone for a photo shoot. Please let us know.",
+      "returnTop": "Return to top of page"
+    }
+  }
+}

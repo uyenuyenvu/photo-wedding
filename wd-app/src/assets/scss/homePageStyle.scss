@@ -1,30 +1,117 @@
 .homePageWrap{
   width: 100%;
   .carouselWrap{
+    background: #9a845b;
+
     width: 100%;
-    .itemCarousel{
+    video{
       width: 100%;
-      height: calc(100vh - 100px);
-      position: relative;
-      .imageBg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
+    }
+  }
+  .buttonAfterCarousel{
+    font-size: 16px;
+    width: 536px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #9A845B;
+    border-radius: 10px;
+    margin: 50px auto;
+    cursor: pointer;
+
+    &:hover{
+      color: #FFFFFF;
+      background:#635905;
+      border: 1px solid #635905;
+    }
+  }
+  .carouselWrap2{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: calc(50vh + 66px);
+    background: #9a845b;
+    //background-image: linear-gradient(#FBF9F7, #FBF9F7, #F5F1EB, #F5F1EB);
+
+    .carouselThin{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150%;
+      margin: 0 auto;
+      .carousel-item{
+        padding: 0 15px;
       }
-      .titleCarousel{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        z-index: 1;
-        font-weight: bold;
-        font-size: 2.5rem;
-        white-space: nowrap;
+      .itemCarousel{
+        margin: 0 auto;
+        height: 50vh;
+        position: relative;
+        .imageBg{
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+        .titleCarousel{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          z-index: 1;
+          font-weight: bold;
+          font-size: 2.5rem;
+          white-space: nowrap;
+        }
       }
+      .carousel-dots{
+        transform: none!important;
+        button{
+          &:before{
+            color: #ffffff;
+          }
+        }
+        .carousel-dots-active{
+          button{
+            &:before{
+              color: #635905!important;
+
+            }
+          }
+        }
+      }
+    }
+    .buttonAfterCarousel{
+        background: white;
+        color: #9A845B;
+      &:hover{
+        color: #FFFFFF;
+        background:#635905;
+        border: 1px solid #635905;
+      }
+    }
+  }
+  .special{
+    padding: 100px 140px;
+    background-image: linear-gradient(#ffffff, #fbfaf8, #e7e1d7, #e7e1d7, #e7e1d7);
+
+    .title{
+      font-size: 32px;
+      color: #9A845B;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+    img{
+      width: 100%;
     }
   }
   .introduceWrap{
@@ -52,19 +139,29 @@
     }
   }
   .descriptionWrap{
-    padding: 20px;
+    padding: 80px 0 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #9a845b;
+    color: white;
+    //background-image: linear-gradient(white, white, white, #FBF9F7);
     .des1{
-      font-size: 40px;
-      margin-bottom: 15px;
+      font-size: 16px;
+      margin: 30px 0 15px 0;
+      letter-spacing: 2px;
+    }
+    .des2_sub{
+      font-size: 18px;
+      margin: 15px 0 30px 0;
+      letter-spacing: 2px;
     }
     .des2{
       margin-bottom: 15px;
-      font-size: 54px;
-      font-weight: bold;
+      font-size: 32px;
+      color: white;
+      letter-spacing: 2px;
     }
     .des3{
       width: 40%;
@@ -73,61 +170,204 @@
       }
       img{
         width: 100%;
+        max-width: 552px;
+        margin: 80px 0;
+      }
+    }
+    .des4{
+      padding: 30px 60px;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      width: max-content;
+      margin-bottom: 50px;
+      .mask3{
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .mask4{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .des5{
+      margin-bottom: 30px;
+      .title{
+        font-size: 32px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      .user{
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .poem{
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 40px;
       }
     }
   }
   .planeWrap{
     width: 100%;
+    padding: 50px 139px;
+    background: #E7E1D7;
     .title{
-      width: 100%;
-      text-align: center;
-      img{
-        width: 30%;
-      }
+      font-size: 32px;
+      color: #635905;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #635905;
     }
     .cards{
       display: flex;
+      margin-top: 50px;
+      justify-content: space-between;
       width: 100%;
       .itemCard{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 30px);
       }
     }
   }
-  .contactWrap{
-    width: 100%;
-    display: flex;
-    padding: 50px 20px;
-    .itemContact{
+  .blanzWrap{
+    padding: 50px 130px;
+    .title{
+      font-size: 32px;
+      color: #9A845B;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .content{
       display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      width: 50%;
-      &:first-of-type{
-        padding-right: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: stretch;
+      .width50{
+        width: 50%;
       }
-      &:last-of-type{
-        padding-left: 10px;
+     .width29{
+          width: 29%;
+        }
+     .width21{
+          width: 21%;
+        }
+      .width22{
+        width: 22%;
       }
-      .title{
-        font-size: 60px;
-        font-weight: bold;
+      .width38{
+        width: 38%;
       }
-      .directionWrap{
-        display: flex;
+      .width40{
+        width: 40%;
+      }
+      }
+  }
+  .conceptWrap{
+    padding: 80px;
+    background: #E7E1D7;
+    .title{
+      font-size: 32px;
+      color: #9A845B;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #635905;
+    }
+    .user_2{
+      font-size: 14px;
+      margin-bottom: 50px;
+      color: #635905;
+    }
+    .movie{
+      width: 536px;
+      height: 170px;
+      margin: 0 auto;
+      iframe{
         width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        .directionItem{
-          font-size: 25px;
-          border: 2px solid darkgray;
-          color: darkgray;
-          border-radius: 7px;
-          padding: 10px 40px;
-          cursor: pointer;
-          letter-spacing: 5px;
+        height: 100%;
+      }
+    }
+    .review{
+      padding: 0 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .itemReview{
+        width: 33.333%;
+        margin: 0 10px;
+        img{
+          width: 100%;
+        }
+        .txt{
+          font-size: 14px;
+          color: #635905;
+          margin-top: 20px;
+          width: 100%;
+          text-align: left;
         }
       }
+    }
+  }
+  .accessWrap{
+    padding: 80px 139px;
+    .title{
+      font-size: 32px;
+      color: #9A845B;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #635905;
+    }
+    .user_2{
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #635905;
+    }
+   .map{
+     width: 100%;
+     iframe{
+       height: 300px;
+       width: 100%;
+     }
+   }
+  }
+  .aboutWrap{
+    padding: 80px;
+    .title{
+      font-size: 32px;
+      color: #9A845B;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .user{
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #635905;
+    }
+  }
+  .cardsContact{
+    display: flex;
+    justify-content: center;
+    .itemCardContact{
+      margin: 0 20px;
     }
   }
 }
@@ -136,4 +376,202 @@
   transform: translateY(-200%);
   position: relative;
   z-index: 9999;
+}
+.buttonReverse{
+  width: 100vw;
+  margin-left: -20px;
+  height: 48px;
+  font-size: 16px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: #ba333e;
+}
+@media only screen and (max-width: 600px) {
+  .buttonReverse{
+    display: flex;
+    margin-left: 0;
+  }
+.homePageWrap{
+  .special{
+    background-color: #E7E1D7;
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+    }
+  }
+  .planeWrap{
+    background-color: #F5F1EB;
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+    }
+    .cards{
+      flex-direction: column;
+      .itemCard{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .blanzWrap{
+    background-color: white;
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+    }
+    .content{
+      .width50{
+        width: 100%;
+      }
+      .width29{
+        width: 58%;
+      }
+      .width21{
+        width: 42%;
+      }
+      .width22{
+        width: 42%;
+      }
+      .width38{
+        width: 58%;
+      }
+      .width40{
+        width: 100%;
+      }
+    }
+  }
+  .conceptWrap{
+    background-color: #E7E1D7;
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .user_2{
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .movie{
+      width: 100%;
+      height: 120px;
+      margin: 0 auto;
+    }
+    .review{
+      padding: 0;
+      background-color: #E7E1D7;
+      flex-direction: column;
+      .itemReview{
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
+    }
+
+  }
+  .aboutWrap{
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .user_2{
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .cardsContact{
+      flex-direction: column;
+      .itemCardContact{
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+  .accessWrap{
+    padding: 50px 20px;
+    .title{
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .user{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .user_2{
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .map{
+      iframe{
+        height: 210px;
+      }
+    }
+  }
+  .buttonAfterCarousel{
+    width: 308px;
+    height: 50px;
+    font-size: 14px;
+    margin: 30px auto;
+  }
+  .carouselWrap{
+    .itemCarousel{
+      height: calc(50vh - 100px);
+    }
+  }
+  .descriptionWrap{
+    .des1{
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .des2_sub{
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    .des4{
+      font-size: 14px;
+      padding: 20px 40px;
+    }
+    .des5{
+      .title{
+        font-size: 24px;
+      }
+      .user{
+        font-size: 14px;
+      }
+      .poem{
+        font-size: 14px;
+      }
+    }
+  }
+  .carouselWrap2{
+    padding-top: 150px;
+    .carouselThin{
+      .itemCarousel{
+        height: 137px;
+      }
+      .carousel-item{
+        padding: 0 5px;
+      }
+    }
+  }
+}
 }

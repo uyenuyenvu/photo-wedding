@@ -1,28 +1,169 @@
+.BeforeFooterWrap{
+  width: 100%;
+  margin-top: 80px;
+  padding: 80px;
+  background-color: #FCFCFC;
+  .cardsContact{
+    padding: 0 190px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .itemCardContact{
+      width: calc(50% - 40px);
+      margin: 20px;
+      display: flex;
+      justify-content: flex-end;
+      &:nth-of-type(2){
+        justify-content: flex-start;
+      }
+      &:nth-of-type(4){
+        justify-content: flex-start;
+      }
+    }
+  }
+  .listBtnBF{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    img{
+      margin: 25px;
+    }
+  }
+}
+.contactWrap{
+  padding: 80px;
+  background: #E7E1D7;
+  border-top: 5px solid #9a845b;
+  .contactContent{
+    .titleWrap{
+      font-size: 18px;
+      .title{
+        font-size: 18px;
+        color: #ba333e;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .sub{
+        font-size: 16px;
+        color: #9a845b;
+      }
+    }
+    .contactTop{
+      display: flex;
+      justify-content: center;
+    }
+    .itemContact{
+      margin: 20px;
+      .nameContact{
+        font-size: 18px;
+        color: #635905;
+      }
+      .imageContact{
+        margin: 10px 0;
+        img{
+          margin: 0 10px;
+        }
+        .imgMain{
+          max-width: 98px;
+        }
+      }
+      .buttonContact{
+        .btnContact{
+          margin: 0 auto 22px auto;
+          color: #635905;
+          border: 1px solid #635905;
+          background: white;
+          height: 40px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          width: 224px;
+          cursor: pointer;
+          &:hover{
+            background: #635905;
+            color: white;
+          }
+        }
+      }
+      .desContact{
+        .title{
+          font-size: 18px;
+          color: #635905;
+          margin-bottom: 10px;
+        }
+        .sub{
+          font-size: 14px;
+          color: #9a845b;
+        }
+      }
+    }
+  }
+
+}
 .footerWrap{
   width: 100%;
-  padding: 15px 30px;
-  background-color: black;
+  padding: 0 120px;
+  background-color: #9A845B;
   position: relative;
-  .listButton{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .listMenuBot{
+    font-size: 14px;
     display: flex;
-    justify-content: start;
-    align-content: center;
-    .itemButton{
-      margin-right: 30px;
+    .itemMenuBot{
+      margin: 0 40px;
+      color: white;
+      a{
+        color: white;
+      }
     }
   }
   .textCopyRight{
-    position: absolute;
-    right: 30px;
+    font-size: 12px;
     color: white;
     font-weight: bold;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 @media only screen and (max-width: 600px) {
+  .BeforeFooterWrap{
+    margin-top: 30px;
+    padding: 50px 20px;
+    .cardsContact{
+      padding: 0;
+      .itemCardContact{
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+    }
+    .listBtnBF{
+      margin-top: 0;
+      flex-direction: column;
+      img{
+        width: calc(100% - 50px);
+        margin: 30px auto auto auto;
+      }
+    }
+  }
+  .contactWrap{
+    padding: 30px 0;
+    .contactContent{
+      .contactTop{
+        flex-direction: column;
+      }
+      .itemContact{
+        margin: 20px 0;
+      }
+    }
+  }
   .footerWrap {
     padding: 10px;
+    flex-direction: column;
+    height: 84px;
+    justify-content: space-evenly;
     .listButton{
       width: 100%;
       justify-content: space-between;

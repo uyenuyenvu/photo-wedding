@@ -1,125 +1,108 @@
-import '../../assets/scss/planList.scss'
-import Button from "../../components/common/Button.jsx";
-import imgDefault from '../../assets/images/imageDefault.png'
-import imgDownArrow from '../../assets/images/down-arrow.png'
+import "../../assets/scss/reportStyle.scss";
+import bgTitle from "../../assets/images/bg-title.svg";
+import img1 from "../../assets/images/img1.jpg";
+import img2 from "../../assets/images/img2.jpg";
+import img3 from "../../assets/images/img3.jpg";
+import BeforeFooter from "../../components/common/BeforeFooter";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 export default function PlanList() {
-    return (
-        <div className={'plan-list'}>
-            <div className="title">プラン一覧</div>
-            <div className='content'>
-                <div className="item-content">
-                    <div className="img-content">
-                        <img src={imgDefault} alt="" className='imageBg'/>
-                    </div>
-                    <div className="text-content">
-                        <div className="title-text">スタジオ撮影</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <Button text={'プランを確認'} style={{'fontWeight': "bold",'margin-top': '18px', 'width': 'fit-content'}} />
-                    </div>
-                </div>
-                <div className="item-content">
-                    <div className="img-content">
-                        <img src={imgDefault} alt="" className='imageBg'/>
-                    </div>
-                    <div className="text-content">
-                        <div className="title-text">ロケーション撮影 (日本の風景)</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <Button text={'プランを確認'} style={{'fontWeight': "bold",'margin-top': '18px', 'width': 'fit-content'}} />
-                    </div>
-                </div>
-                <div className="item-content">
-                    <div className="img-content">
-                        <img src={imgDefault} alt="" className='imageBg'/>
-                    </div>
-                    <div className="text-content">
-                        <div className="title-text">ロケーション撮影 (アニメ)</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <Button text={'プランを確認'} style={{'fontWeight': "bold",'margin-top': '18px', 'width': 'fit-content'}} />
-                    </div>
-                </div>
-                <div className="item-content">
-                    <div className="img-content">
-                        <img src={imgDefault} alt="" className='imageBg'/>
-                    </div>
-                    <div className="text-content">
-                        <div className="title-text">日本旅行 セットプラン</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <div className="content-text">hogehoge hogehoge：00000元</div>
-                        <Button text={'プランを確認'} style={{'fontWeight': "bold",'margin-top': '18px', 'width': 'fit-content'}} />
-                    </div>
-                </div>
-                
-            </div>
-            <div className="border">
-            </div>
-            <div className="instruct">
-                <div className="instruct-title">ご利用の流れ</div>
-                <div className="instruct-content">
-                    <div className="instruct-item">
-                        <div className="chart">お問い合わせ 
-                            <div className="arrow">
-                             <img src={imgDownArrow} alt="" />
-                            </div>
-                        </div>
-                        <div className="note">WeChatからお問い合わせ</div>
-                    </div>
-                    <div className="instruct-item">
-                        <div className="chart">Web Meeting 
-                            <div className="arrow">
-                             <img src={imgDownArrow} alt="" />
-                            </div>
-                        </div>
-                        <div className="note">フォトプランナーと面談を実施し、疑問点を解消。</div>
-                    </div>
-                    <div className="instruct-item">
-                        <div className="chart">プラン & 来日日程を決める 
-                            <div className="arrow">
-                             <img src={imgDownArrow} alt="" />
-                            </div>
-                        </div>
-                        <div className="note">面談の情報等を元に プラン(衣装含め?)と 来日日程を決定。</div>
-                    </div>
-                    <div className="instruct-item">
-                        <div className="chart">来日し 撮影場所にご来店 
-                            <div className="arrow">
-                             <img src={imgDownArrow} alt="" />
-                            </div>
-                        </div>
-                        <div className="note">来日し撮影場所にご来店いただく。
-                        <p>※来日の際のご不明点はWeChatよりお気軽にお問い合わせください。</p>
-                        </div>
-                    </div>
-                    <div className="instruct-item">
-                        <div className="chart">撮影 
-                            <div className="arrow">
-                             <img src={imgDownArrow} alt="" />
-                            </div>
-                        </div>
-                        <div className="note">現地にて撮影📸</div>
-                    </div>
-                    <div className="instruct-item">
-                        <div className="chart">納品 
-                        </div>
-                        <div className="note">X日後に画像データをお渡し。</div>
-                    </div>
-                </div>
-                <Button text={'お問い合わせはこちら'} style={{'fontWeight': "bold",'margin': '0 auto 95px', 'width': 'fit-content'}} />
-            </div>
+  const [currentPage, setCurrentPage] = useState(1);
+  const { t } = useTranslation();
+  return (
+    <>
+      <div className={"customer-report"}>
+        <div className="title-page">
+          <img src={bgTitle} alt="" />
+          <div className="contentTitle">
+            <div className="title">{t("planList.title")}</div>
+            <div className="sub-title">{t("planList.subtitle")}</div>
+          </div>
         </div>
-    )
+        <div className="list-event">
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <img src={img1} alt="" />
+            <div className="content">
+              <div className="content-item">
+                【公式HP予約限定★ご来店は撮影日のみ】 スマートニ
+              </div>
+              <div className="read-more">
+                撮影対象期間: お申し込みから1ヶ月以内で撮影可能 な方
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pagination">
+          {[1, 2, 3, 4].map((page, i) => {
+            return (
+              <div
+                key={i}
+                onClick={() => setCurrentPage(page)}
+                className={`index ${page === currentPage ? "select" : ""}`}
+              >
+                {page}
+              </div>
+            );
+          })}
+          <div className="index">{`>>`}</div>
+        </div>
+      </div>
+      <BeforeFooter />
+    </>
+  );
 }

@@ -1,0 +1,157 @@
+.dress {
+    color: #635905;
+    font-size: 14px;
+    .title-page {
+        position: relative;
+        width: 628px;
+        height: 108.85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        .title {
+            font-size: 28px;
+            color: #ba333e;
+            font-weight: 700;
+        }
+        .sub-title {
+            margin-top: 5px;
+            color: #000000;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .text-page {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .tab{
+        max-width: 1088px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        .item {
+            border: 1px solid #F5F1EB;
+            border-radius: 0;
+            color: #635905;
+        }
+        #select {
+            background-color: #F5F1EB;
+        }
+    }
+    .content {
+        background-color: #F5F1EB;
+        padding-bottom: 50px;
+        .title {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title-bg {
+                font-size: 16px;
+                font-weight: bold;
+                padding: 15px 0;
+            }
+            #title-tab-4 {
+                font-size: 12px;
+            }
+            .title-text {
+                font-weight: lighter;
+                margin-top: 15px;
+            }
+        }
+        .list {
+            max-width: 1124px;
+            margin: 0 auto;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            .item {
+                max-width: 239px;
+                margin-top: 30px;
+                img {
+                    width: 100%;
+                }
+                .button {
+                    background-color: #FFFFFF;
+                    border: 1px solid #9A845B;
+                    width: 100%;
+                    height: 37px;
+                    margin-top: 16px;
+                    border-radius: 19px;
+                    color: #635905;
+                }
+                
+            }
+        }
+    }
+    
+}
+#hidden {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .dress {
+        .title-page {
+            width: 372px;
+            height: 80.02px;
+            display: flex;
+            margin: 20px auto;
+            .title {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .sub-title {
+                margin-top: 2px;
+                font-size: 12px;
+            }
+            img {
+                width: 372px;
+                height: 80.02px;
+            }
+        }
+        .text-page {
+            font-size: 14px;
+            width: 308px;
+            margin: 0 auto;
+        }
+        .tab {
+            .item {
+                font-size: 12px;
+            }
+        }
+        .content {
+            .title {
+                padding: 25px;
+                .title-bg {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 15px 0;
+                }
+                .title-text {
+                    font-weight: lighter;
+                    margin-top: 15px;
+                }
+            }
+            .list {
+                max-width: 372px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                .item {
+                    max-width: 160px;
+                    margin-top: 24px;
+                    .button {
+                        height: 25px;
+                        margin-top: 12px;
+                        border-radius: 12px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
